@@ -1,9 +1,9 @@
 package Exit;
 
-public class CalculatePrice {
-    CalculatePrice() {
+public class PriceCalculator {
+    PriceCalculator() {
 
-        CalculateTime calculateTime = new CalculateTime();
+        TimeCalculator calculateTime = new TimeCalculator();
         double price = (double) (2000 * calculateTime.timeDifferenceInMinutes) / 60; // 60 minutes = 2000 Naira
 
         double rounded = Math.ceil(price / 100) * 100; //rounds price to the nearest hundred

@@ -1,5 +1,4 @@
 Small_Vehicles
-SM0016
 SM0017
 SM0018
 SM0019

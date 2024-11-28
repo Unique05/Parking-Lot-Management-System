@@ -7,13 +7,13 @@ import java.time.LocalDateTime;
 import java.time.Duration;
 
 
-public class CalculateTime {
+public class TimeCalculator {
     private static final String EntryTimeFile = "Entry_Time.txt";
     LocalDateTime entryTime;
     LocalDateTime exitTime;
     public long timeDifferenceInMinutes;
 
-    CalculateTime(){
+    TimeCalculator(){
 
         try(BufferedReader reader = new BufferedReader(new FileReader(EntryTimeFile))){ //gets the time of entry from Entry_Time file
            String timeString = reader.readLine();

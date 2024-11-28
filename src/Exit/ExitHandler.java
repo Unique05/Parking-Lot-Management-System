@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.time.format.DateTimeFormatter;
 
-public class Main {
+public class ExitHandler {
     public static void main(String[] args) {
         handleExit();
     }
@@ -29,8 +29,8 @@ public class Main {
                     || parkingSpot.getBigVehicles().contains(parkingSpotSN));
 
             if (isInOriginalSpots && !isInFreeSpots) {
-                CalculatePrice calculatePrice = new CalculatePrice();
-                CalculateTime calculateTime = new CalculateTime();
+                PriceCalculator calculatePrice = new PriceCalculator();
+                TimeCalculator calculateTime = new TimeCalculator();
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, MMM dd yyyy hh:mm a");
                 System.out.println("Exit time is " + calculateTime.exitTime.format(formatter));
                 if (Arrays.asList(parkingSpot.getOriginalSmallVehicles()).contains(parkingSpotSN)) {

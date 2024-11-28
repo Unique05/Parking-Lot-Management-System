@@ -1,7 +1,7 @@
-// Simulates a parking lot management system
+package Main;// Simulates a parking lot management system
 
-import Entry.*;
-import Exit.*;
+import Entry.EntryHandler;
+import Exit.ExitHandler;
 
 import java.util.Scanner;
 
@@ -16,9 +16,9 @@ public class ParkingLotManager {
             String inOrOut = scanner.nextLine().toUpperCase().trim();
 
             if (inOrOut.equals("IN")) {
-                Entry.Main.handleEntry();
+                EntryHandler.handleEntry();
             } else if (inOrOut.equals("OUT")) {
-                Exit.Main.handleExit();
+                ExitHandler.handleExit();
             } else if (inOrOut.equals("Q")) {
                 System.out.println("GoodBye :) ");
                 break;

@@ -1,13 +1,13 @@
 package Entry;
 
-public class Main {
+public class EntryHandler {
     public static void main(String[] args){
         handleEntry();
     }
 
     public static void handleEntry(){
         ParkingSpot parkingSpot = new ParkingSpot();
-        AssigningSpot assigningSpot = new AssigningSpot();
+        SpotAssigner assigningSpot = new SpotAssigner();
         EntryTime entryTime = new EntryTime();
     }
 }
